@@ -1,9 +1,13 @@
 package DAO;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.PersistenceUnit;
+
 import model.Book;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.*;
 
 
 @Repository
@@ -12,9 +16,7 @@ public class BookDaoImpl implements BookDao {
     @PersistenceUnit
     private EntityManagerFactory emFactory;
 
-
-    BookDaoImpl(){
-
+    BookDaoImpl() {
     }
 
     @Override
@@ -34,5 +36,4 @@ public class BookDaoImpl implements BookDao {
         entityManager.close();
         return book;
     }
-
 }
