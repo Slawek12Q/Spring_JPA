@@ -1,13 +1,12 @@
-package DAO;
+package pl.java.dao;
+
+import pl.java.model.Book;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceUnit;
-
-import model.Book;
-import org.springframework.stereotype.Repository;
-
 
 
 @Repository

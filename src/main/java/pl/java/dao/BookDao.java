@@ -1,9 +1,9 @@
-package DAO;
+package pl.java.dao;
 
-import model.Book;
+import pl.java.model.Book;
 
 public interface BookDao {
     public void save(Book book);
     public Book get(Long id);
-    //public void cleanUp();
+
 }
