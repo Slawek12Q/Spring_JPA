@@ -20,7 +20,7 @@ public class JpaConfig {
         emf.setPersistenceUnitName("spring-jpa-pu");
         emf.setDataSource(ds);
         emf.setJpaVendorAdapter(adapter);
-        emf.setPackagesToScan("pl.javastart.model");
+        emf.setPackagesToScan("pl.java.model");
         return emf;
     }
 
